@@ -1,0 +1,23 @@
+header.landing-about {
+    width: 100%;
+    min-height: 100vh;
+    height: 1px;
+    color: white;
+    background: url("../images/img2.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.konten{
+    text-align: center;
+    justify-content: center;
+}
+.konten .isi-teks{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+ .konten .about-us-judul{
+    font-size: 40px;
+ }
+  

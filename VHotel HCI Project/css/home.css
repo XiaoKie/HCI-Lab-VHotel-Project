@@ -1,0 +1,106 @@
+/*Hero Section*/
+header.landing {
+  min-height: 100vh;
+  height: 1px;
+  color: white;
+  background: url("../images/img1.jpg"), rgba(33, 33, 33, 0.4);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.landing .hero {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .container {
+  max-width: 768px;
+  text-align: center;
+}
+
+@media screen and (max-width: 769px) {
+  .hero .container {
+    max-width: 550px;
+  }
+}
+
+.hero .welcome {
+  font-family: "Nova Square";
+  font-size: 2.5rem;
+  align-items: center;
+}
+
+.konten {
+  justify-content: center;
+  text-align: center;
+}
+h2.section-title.text-center {
+  text-align: center;
+  font-family: "Anek Tamil";
+  font-size: 36px;
+}
+.container .offer-img {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 5rem;
+}
+.container .popular-tourist-img {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 5rem;
+}
+
+.offer-img img {
+  width: 350px;
+  height: 320px;
+  object-fit: cover;
+}
+
+.penawaran {
+  text-align: center;
+  font-family: "Anek Tamil";
+  font-size: 24px;
+}
+
+.popular-tourist-img img {
+  width: 350px;
+  height: 320px;
+  object-fit: cover;
+}
+h5.see-more {
+  text-align: center;
+  font-size: 30px;
+  color: red;
+}
+.offer-img .img2 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.popular-tourist-img .baris-atas,
+.baris-bawah {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.image-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.image-container img {
+  flex-shrink: 0;
+  width: 600px;
+  height: 300px;
+  margin-right: 10px; /* Jarak antara gambar */
+  cursor: pointer;
+}
+.image-container .special img {
+  flex-shrink: 0;
+  width: 250px;
+  height: 300px;
+  margin-right: 10px; /* Jarak antara gambar */
+  cursor: pointer;
+}

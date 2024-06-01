@@ -1,0 +1,384 @@
+:root {
+  --primary: rgb(0, 0, 0);
+  --bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Anek Tamil";
+  background-color: var(--bg);
+  color: black;
+}
+header {
+  margin-bottom: 50px; 
+}
+
+main {
+  margin-top: 50px;
+}
+footer{
+  margin-top: 50px;
+}
+/*Navbar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22.4px 7%;
+  background-color: var(--primary);
+  border-bottom: 1px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 64px;
+  font-family: "Nova Square";
+  color: red;
+}
+
+.navbar .navbar-logo span {
+  color: white;
+}
+
+.navbar .navbar-nav a {
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 16px;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #ff0000;
+}
+
+.navbar-toggle {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.navbar .navbar-toggle a {
+  color: white;
+  margin: 0 8px;
+}
+
+.navbar .navbar-toggle a:hover {
+  color: rgb(255, 0, 0);
+}
+
+.sidemenu {
+  position: absolute;
+  top: 0;
+  right: -200px;
+  bottom: 0;
+  width: 200px;
+  background-color: white;
+  padding: 0;
+  list-style: none;
+  transform: translateX(0);
+  transition: transform 0.5s;
+  z-index: 9999;
+  color: white;
+  text-decoration: none;
+}
+
+.sidemenu.show-menu {
+  transform: translateX(-200px);
+  background-color: black;
+}
+
+.sidemenu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 16px;
+  margin-top: 32px;
+  background-color: black;
+}
+
+.sidemenu-list a {
+  width: 100%;
+  height: 100%;
+  padding: 16px 0;
+  text-align: center;
+}
+
+.close-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  margin-top: 16px;
+  color: #ffffff;
+}
+
+#ham-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #ham-menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    display: none;
+  }
+}
+
+.bawah {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 380px;
+}
+.bg {
+  position: absolute;
+  height: 98.95%;
+  width: 100%;
+  top: 1.05%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.47);
+}
+.fb,
+.ig,
+.sosmed,
+.twt {
+  position: absolute;
+  height: 16.91%;
+  width: 99.54%;
+  top: 59.9%;
+  right: 0;
+  bottom: 23.19%;
+  left: 0.46%;
+}
+.fb,
+.ig,
+.sosmed {
+  top: 38.65%;
+  bottom: 44.44%;
+}
+.ig,
+.sosmed {
+  top: 16.43%;
+  bottom: 66.67%;
+}
+.sosmed {
+  height: 54.47%;
+  width: 16.95%;
+  top: 16.58%;
+  right: 14.84%;
+  bottom: 28.95%;
+  left: 68.2%;
+  font-family: Inter;
+}
+.follow-us {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Anek Tamil";
+}
+.twitter,
+.yt,
+.youtube {
+  position: absolute;
+  bottom: 0;
+}
+.youtube {
+  height: 100%;
+  width: 23.15%;
+  top: 0;
+  right: 76.85%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.twitter,
+.yt {
+  height: 16.91%;
+  width: 99.54%;
+  top: 83.09%;
+  right: 0;
+  left: 0.46%;
+}
+.twitter {
+  height: 100%;
+  width: 16.2%;
+  top: 0;
+  right: 83.8%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vhoteljakarta {
+  position: absolute;
+  height: 100%;
+  width: 73.61%;
+  top: 0;
+  left: 26.39%;
+  display: flex;
+  align-items: center;
+}
+
+.twitter {
+  height: 100%;
+  width: 16.2%;
+  top: 0;
+  right: 83.8%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vhotel {
+  position: absolute;
+  height: 71.32%;
+  width: 36.88%;
+  top: 14.74%;
+  right: 60.39%;
+  bottom: 13.95%;
+  left: 2.73%;
+}
+.alamat,
+.infovhoteljakarta {
+  position: absolute;
+  width: 63.56%;
+  top: 79.34%;
+  left: 0;
+  display: inline-block;
+}
+.alamat {
+  width: 100%;
+  top: 50.18%;
+}
+.vhotel-jakarta {
+  position: absolute;
+  width: 68.86%;
+  top: 0;
+  left: 4.45%;
+  font-family: "Nova Square";
+  text-align: center;
+  display: inline-block;
+  font-size: 96px;
+  color: #fff;
+}
+.p {
+  margin: 0;
+}
+.v {
+  color: red;
+}
+.jakarta {
+  margin: 0;
+  font-size: 32px;
+}
+.payment {
+  position: absolute;
+  height: 19.47%;
+  width: 29.84%;
+  top: 76.32%;
+  right: 1.95%;
+  bottom: 4.21%;
+  left: 68.2%;
+}
+.payment-methods {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.gopay-logo {
+  width: 39.27%;
+  right: 10.47%;
+  left: 50.26%;
+  object-fit: cover;
+}
+.gpn-logo,
+.gopay-logo,
+.mastercard-logo,
+.visa-logo {
+  position: absolute;
+  height: 54.05%;
+  top: 45.95%;
+  bottom: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.gpn-logo {
+  width: 8.38%;
+  right: 0;
+  left: 91.62%;
+  object-fit: cover;
+}
+.mastercard-logo,
+.visa-logo {
+  width: 20.94%;
+  right: 78.01%;
+  left: 1.05%;
+}
+.mastercard-logo {
+  right: 53.4%;
+  left: 25.65%;
+}
+.navigasi {
+  position: absolute;
+  height: 55.79%;
+  width: 9.45%;
+  top: 27.11%;
+  right: 43.13%;
+  bottom: 17.11%;
+  left: 47.42%;
+}
+.about-us-foot,
+.facility-foot,
+.home-foot,
+.reservation-foot,
+.rooms-foot {
+  position: absolute;
+  height: 11.32%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  cursor: pointer;
+}
+.about-us-foot,
+.facility-foot,
+.reservation-foot,
+.rooms-foot {
+  top: 22.17%;
+}
+.about-us-foot,
+.facility-foot,
+.rooms-foot {
+  top: 44.34%;
+}
+.about-us-foot,
+.facility-foot {
+  top: 66.51%;
+}
+.about-us-foot {
+  top: 88.68%;
+}
+
+.vhotel-jakarta .p6 {
+  font-size: 64px;
+}
+.vhotel-jakarta .jakarta {
+  font-size: 24px;
+}

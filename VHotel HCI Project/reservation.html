@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VHotel</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Nova+Square&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reservation.css" />
+  </head>
+  <body>
+    <header class="landing">
+      <!-- Navbar Start -->
+      <nav class="navbar">
+        <a href="home.html" class="navbar-logo">V<span>Hotel</span></a>
+        <div class="navbar-nav">
+          <a href="home.html">Home</a>
+          <a href="reservation.html">Reservation</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="about-us.html">About Us</a>
+        </div>
+        <div class="navbar-toggle">
+          <a href="#" id="ham-menu"><i data-feather="menu"></i></a>
+        </div>
+        <div class="sidemenu">
+          <div class="close-icon">
+            <a href="#" id="close-toggle"><i data-feather="x"></i></a>
+          </div>
+          <div class="sidemenu-list">
+            <a href="home.html">Home</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="about-us.html">About Us</a>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Banner Start-->
+      <section class="hero">
+        <div class="container">
+          <h1 class="welcome"></h1>
+        </div>
+      </section>
+      <!-- Banner End-->
+    </header>
+
+    <main>
+      <h2>Booking Form</h2>
+      <form action="">
+        <table>
+          <tr>
+            <td><label for="checkin">Check-in</label></td>
+            <td><input type="date" name="" id="input-date-in" /></td>
+          </tr>
+          <tr>
+            <td><label for="checkout">Check-out</label></td>
+            <td><input type="date" name="" id="input-date-out" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Full name</label></td>
+            <td><input type="text" name="" id="input-name" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Adult(s)</label></td>
+            <td><input type="number" name="" id="input-adult" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Children(s)</label></td>
+            <td><input type="number" name="" id="input-child" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Room(s)</label></td>
+            <td><input type="number" name="" id="input-room" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Select Room Type</label></td>
+            <td>
+              <select name="" id="input-type">
+                <option value=""></option>
+                <option value="deluxe-room">Deluxe Room</option>
+                <option value="junior-suite">Junior Suite Room</option>
+                <option value="presidential">Presidential Suite</option>
+                <option value=""></option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">E-mail address</label></td>
+            <td><input type="text" name="" id="input-email" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Mobile Phone</label></td>
+            <td><input type="text" name="" id="input-number" /></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="checkbox" name="" id="input-agreement" />
+              <label for="input-agreement">
+                I agree to terms and conditions</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><button type="reset">Reset form</button></td>
+            <td><input type="button" value="Submit" onclick="validate()" /></td>
+          </tr>
+        </table>
+      </form>
+      <p id="error-message" class="error"></p>
+    </main>
+
+    <footer class="bawah">
+      <div class="bg"></div>
+      <div class="vhotel">
+        <div class="vhotel-jakarta">
+          <p class="p6">
+            <span>
+              <span class="v">V</span>
+            </span>
+            <span>Hotel</span>
+          </p>
+          <p class="jakarta">
+            <span>
+              <span>JAKARTA</span>
+            </span>
+          </p>
+        </div>
+        <div class="infovhoteljakarta">
+          <p class="p6">+62 618 6188 6188</p>
+          <p class="p6">Info@VHotelJakarta.com</p>
+        </div>
+        <div class="alamat">
+          Ciputra World 1, Jalan Prof Dr Satrio Kav. 3-5, Setiabudi, Kuningan,
+          Setiabudi, Jakarta, Indonesia, 12940
+        </div>
+      </div>
+      <div class="navigasi">
+        <div class="home-foot" id="hOMEText">HOME</div>
+        <div class="reservation-foot" id="rESERVATIONText">RESERVATION</div>
+        <div class="rooms-foot" id="rOOMSText">ROOMS</div>
+        <div class="facility-foot" id="fACILITYText">FACILITY</div>
+        <div class="about-us-foot" id="aBOUTUSText">ABOUT US</div>
+      </div>
+      <div class="sosmed">
+        <div class="follow-us">FOLLOW US</div>
+        <div class="yt">
+          <div class="vhoteljakarta">@VHotel.Jakarta</div>
+          <a href="#" id="youtube"><i data-feather="youtube"></i></a>
+        </div>
+        <div class="twt">
+          <div class="vhoteljakarta">@VHotel.Jakarta</div>
+          <a href="#" id="twitter"><i data-feather="twitter"></i></a>
+        </div>
+        <div class="fb">
+          <div class="vhoteljakarta">@VHotel.Jakarta</div>
+          <a href="#" id="twitter"><i data-feather="facebook"></i></a>
+        </div>
+        <div class="ig">
+          <div class="vhoteljakarta">@VHotel.Jakarta</div>
+          <a href="#" id="twitter"><i data-feather="instagram"></i></a>
+        </div>
+      </div>
+      <div class="payment">
+        <div class="payment-methods">PAYMENT METHODS</div>
+        <img class="gopay-logo" alt="" src="./images/paygpay.png" />
+        <img class="visa-logo" alt="" src="./images/payvisa.png" />
+        <img class="mastercard-logo" alt="" src="./images/paymastercard.png" />
+        <img class="gpn-logo" alt="" src="./images/paygpn.png" />
+      </div>
+    </footer>
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My JavaScript -->
+    <p id="error-message"></p>
+    <script src="js/script.js"></script>
+    <script src="js/validationform.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+header.landing-facilities {
+  min-height: 100vh;
+  height: 1px;
+  color: white;
+  background: url("../images/img3.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.konten .atas {
+  justify-content: center;
+  text-align: center;
+}
+.atas .judul-fasilitas {
+  padding-bottom: 2rem;
+  font-size: 40px;
+}
+.atas .isi-teks {
+  font-size: 20px;
+}
+.baruuu-1{
+    padding-top: 100px;
+}
+.baruuu-1 .fasilitas {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+.fasilitas img{
+    width: 350px;
+    height: 225px;
+    padding-right: 20px;
+
+}
+.jam-ikon .ikon{
+    display: flex;
+    text-align: center;
+}
+.jam-ikon .jam{
+    padding-left: 16px;
+}

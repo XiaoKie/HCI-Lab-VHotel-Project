@@ -1,0 +1,126 @@
+header.landing-deluxerooms {
+  min-height: 100vh;
+  height: 1px;
+  color: white;
+  background: url("../images/img13.png"), rgba(33, 33, 33, 0.75);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+header.landing-juniorrooms {
+  min-height: 100vh;
+  height: 1px;
+  color: white;
+  background: url("../images/kamar-1.jpg"), rgba(33, 33, 33, 0.75);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+header.landing-presidenrooms {
+  min-height: 100vh;
+  height: 1px;
+  color: white;
+  background: url("../images/img14.jpg"), rgba(33, 33, 33, 0.75);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.landing-deluxerooms .hero, .landing-juniorrooms .hero,.landing-presidenrooms .hero{
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .container {
+  max-width: 768px;
+  text-align: center;
+}
+
+.hero .welcome {
+  font-size: 2.5rem;
+  align-items: center;
+}
+
+.image-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.image-container img {
+  flex-shrink: 0;
+  width: 600px;
+  height: 300px;
+  margin-right: 10px; /* Jarak antara gambar */
+  cursor: pointer;
+}
+
+.konten .spec {
+  display: flex;
+  justify-content: left;
+  text-align: center;
+}
+.spec .kiri {
+  max-width: 700px;
+  text-align: left;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.spesifikasi {
+  padding-top: 10px;
+}
+.harga{
+    font-size: 40px;
+}
+.bookn {
+  background-color: #070f56;
+  color: white;
+  font-size: 40px;
+}
+
+.judul {
+  font-size: 30px;
+}
+.mauflex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.icon-atas {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.icon-bawah {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.icon-fac img {
+  width: 50px;
+  height: 50px;
+}
+.namanya {
+  text-align: center;
+}
+.ikon img {
+  width: 30px;
+  height: 30px;
+}
+.bagii {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+}
+.teksnya {
+  padding-left: 10px;
+  width: 300px;
+}
+.jarak {
+  padding-left: 10px;
+  text-align: right;
+}
+
+.konten{
+    padding-bottom: 50px;
+}
